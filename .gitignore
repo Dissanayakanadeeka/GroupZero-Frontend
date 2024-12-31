@@ -1,4 +1,7 @@
 node_modules/
 .vite/
 *.log
+src/components/.env
+
+
 
