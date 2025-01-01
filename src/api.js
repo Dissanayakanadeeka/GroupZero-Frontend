@@ -1,8 +1,11 @@
 import axios from "axios";
 import { ACCESS_TOKEN } from "./constants";
 
+
+const apiUrl = "https://group-zero-d291f139ee8c.herokuapp.com";
+
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl,
 });
 
 api.interceptors.request.use((config) => {
